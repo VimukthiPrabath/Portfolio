@@ -1,86 +1,818 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vimukthi Koswaththa - Computer Science Graduate | Internship Seeker">
+    
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <title>Vimukthi Koswaththa | Computer Science Graduate</title>
+</head>
+<body>
+    <!--==================== PRELOADER ====================-->
+    <div class="preloader">
+        <div class="preloader__content">
+            <div class="preloader__spinner"></div>
+            <span class="preloader__text">Loading Portfolio</span>
+        </div>
+    </div>
 
-        <!--=============== REMIXICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="">
-
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <title>Vimukthi Koswaththa</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <a href="#home" class="nav__logo">
+                    <span class="logo__initials">VK</span>
+                    <span class="logo__name">Vimukthi</span>
+                </a>
+            </div>
             
-        </header>
-
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="ri-home-4-line"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="ri-user-line"></i> About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class="ri-graduation-cap-line"></i> Education
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="ri-code-s-slash-line"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <i class="ri-briefcase-line"></i> Projects
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="ri-mail-line"></i> Contact
+                        </a>
+                    </li>
+                </ul>
                 
-            </section>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
 
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
+            <div class="nav__actions">
+                <div class="theme-toggle" id="theme-button">
+                    <i class="ri-moon-line theme-icon"></i>
+                </div>
+                <a href="#contact" class="btn btn-small btn-primary">Apply Now</a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-3-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container">
+                <div class="home__content">
+                    <div class="home__data">
+                        <span class="home__greeting">Hello, I'm</span>
+                        <h1 class="home__title">Vimukthi <span class="highlight">Koswaththa</span></h1>
+                        <h2 class="home__subtitle">Computer Science Graduate | Internship Seeker</h2>
+                        
+                        <p class="home__description">
+                            Recent graduate with strong foundation in web development, 
+                            eager to apply academic knowledge to real-world challenges 
+                            through an internship opportunity.
+                        </p>
+                        
+                        <div class="home__buttons">
+                            <a href="#contact" class="btn btn-primary">
+                                <i class="ri-mail-line"></i> Contact for Internship
+                            </a>
+                            <a href="#projects" class="btn btn-secondary">
+                                <i class="ri-github-line"></i> View Projects
+                            </a>
+                        </div>
+                        
+                        <div class="home__quick-info">
+                            <div class="quick-info__item">
+                                <i class="ri-map-pin-line"></i>
+                                <span>Available for Remote Work</span>
+                            </div>
+                            <div class="quick-info__item">
+                                <i class="ri-calendar-line"></i>
+                                <span>Immediately Available</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="home__image">
+                        <div class="profile-container">
+                            <div class="profile-wrapper">
+                                <img src="assets/img/mypic.jpg" alt="Vimukthi Koswaththa" class="profile-img">
+                                <div class="profile-frame"></div>
+                                <div class="profile-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            
+                            <div class="tech-stack">
+                                <span class="tech-badge">HTML5</span>
+                                <span class="tech-badge">CSS3</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
-            </section>
-
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section" id="qualification">
+                <div class="home__features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="ri-book-open-line"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Academic Excellence</h3>
+                            <p>Strong theoretical foundation in computer science</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="ri-lightbulb-line"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Quick Learner</h3>
+                            <p>Eager to learn new technologies and methodologies</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="ri-team-line"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Team Player</h3>
+                            <p>Collaborative approach to problem-solving</p>
+                        </div>
+                    </div>
+                </div>
                 
-            </section>
+                <div class="scroll-indicator">
+                    <a href="#about" class="scroll-down">
+                        <span>Scroll to explore</span>
+                        <i class="ri-arrow-down-line"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get to know me</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
                 
-            </section>
+                <div class="about__grid">
+                    <div class="about__content">
+                        <h3 class="about__intro">
+                            Passionate <span class="gradient-text">Computer Science Graduate</span> 
+                            seeking internship opportunities
+                        </h3>
+                        
+                        <p class="about__text">
+                            As a recent graduate with a Bachelor's degree in Computer Science, 
+                            I have developed a solid foundation in software development principles 
+                            and web technologies. I am enthusiastic about applying my academic 
+                            knowledge to practical, real-world projects.
+                        </p>
+                        
+                        <p class="about__text">
+                            My academic journey has equipped me with problem-solving skills, 
+                            attention to detail, and the ability to quickly adapt to new technologies. 
+                            I am particularly interested in web development and eager to contribute 
+                            to meaningful projects while continuing to learn and grow professionally.
+                        </p>
+                        
+                        <div class="about__highlights">
+                            <div class="highlight-item">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <span>Strong academic background in CS fundamentals</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <span>Hands-on experience with modern web technologies</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <span>Excellent problem-solving and analytical skills</span>
+                            </div>
+                        </div>
+                        
+                        <div class="about__cta">
+                            <a href="#contact" class="btn btn-primary">
+                                <i class="ri-mail-send-line"></i> Contact for Internship
+                            </a>
+                            <a href="assets/docs/resume.pdf" class="btn btn-outline" download>
+                                <i class="ri-download-line"></i> Download Resume
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="about__info">
+                        <div class="info-card">
+                            <h3 class="info-title">Personal Information</h3>
+                            
+                            <div class="info-list">
+                                <div class="info-item">
+                                    <span class="info-label">
+                                        <i class="ri-user-line"></i> Name:
+                                    </span>
+                                    <span class="info-value">Vimukthi Koswaththa</span>
+                                </div>
+                                
+                                <div class="info-item">
+                                    <span class="info-label">
+                                        <i class="ri-mail-line"></i> Email:
+                                    </span>
+                                    <span class="info-value">vimukthivpk123@gmail.com</span>
+                                </div>
+                                
+                                <div class="info-item">
+                                    <span class="info-label">
+                                        <i class="ri-map-pin-line"></i> Location:
+                                    </span>
+                                    <span class="info-value">Sri Lanka</span>
+                                </div>
+                                
+                                <div class="info-item">
+                                    <span class="info-label">
+                                        <i class="ri-graduation-cap-line"></i> Education:
+                                    </span>
+                                    <span class="info-value">BSc Computer Science</span>
+                                </div>
+                                
+                                <div class="info-item">
+                                    <span class="info-label">
+                                        <i class="ri-briefcase-line"></i> Status:
+                                    </span>
+                                    <span class="info-value highlight">Seeking Internship</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <!--==================== PROJECTS ====================-->
-            <section class="projects section" id="projects">
+        <!--==================== EDUCATION ====================-->
+        <section class="education section" id="education">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Academic background</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-divider"></div>
+                </div>
                 
-            </section>
+                <div class="education__timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2022 - 2026</span>
+                            <h3 class="timeline-title">Bachelor of Science in Computer Science</h3>
+                            <p class="timeline-subtitle">University of [Your University]</p>
+                            <div class="timeline-description">
+                                <p>Relevant Coursework:</p>
+                                <ul class="course-list">
+                                    <li>Data Structures & Algorithms</li>
+                                    <li>Web Development</li>
+                                    <li>Database Systems</li>
+                                    <li>Software Engineering</li>
+                                    <li>Object-Oriented Programming</li>
+                                    <li>Computer Networks</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2020 - 2022</span>
+                            <h3 class="timeline-title">Higher Secondary Education</h3>
+                            <p class="timeline-subtitle">[Your School Name]</p>
+                            <div class="timeline-description">
+                                <p>Focus: Science Stream with Mathematics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">My technical abilities</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="section-divider"></div>
+                </div>
                 
-            </section>
-
-            <!--==================== CONTACT ====================-->
-            <section class="contact section" id="contact">
+                <div class="skills__intro">
+                    <p>
+                        Through academic projects and personal learning, I've developed proficiency 
+                        in the following technologies and tools:
+                    </p>
+                </div>
                 
-            </section>
-        </main>
+                <div class="skills__grid">
+                    <!-- Frontend Skills -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="ri-computer-line"></i>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="ri-html5-fill"></i>
+                                </div>
+                                <span class="skill-name">HTML5</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="ri-css3-fill"></i>
+                                </div>
+                                <span class="skill-name">CSS3</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="ri-javascript-fill"></i>
+                                </div>
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="ri-reactjs-fill"></i>
+                                </div>
+                                <span class="skill-name">React</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="ri-bootstrap-fill"></i>
+                                </div>
+                                <span class="skill-name">Bootstrap</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Backend Skills -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="ri-server-line"></i>
+                            <h3>Backend Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="ri-nodejs-fill"></i>
+                                </div>
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="ri-database-2-fill"></i>
+                                </div>
+                                <span class="skill-name">MongoDB</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="ri-code-s-slash-fill"></i>
+                                </div>
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="ri-code-s-slash-fill"></i>
+                                </div>
+                                <span class="skill-name">Java</span>
+                                <span class="skill-level">Basic</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tools & Others -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="ri-tools-line"></i>
+                            <h3>Tools & Others</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="ri-git-branch-fill"></i>
+                                </div>
+                                <span class="skill-name">Git</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="ri-github-fill"></i>
+                                </div>
+                                <span class="skill-name">GitHub</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="ri-terminal-box-fill"></i>
+                                </div>
+                                <span class="skill-name">VS Code</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="ri-figma-fill"></i>
+                                </div>
+                                <span class="skill-name">Figma</span>
+                                <span class="skill-level">Basic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
+        <!--==================== PROJECTS ====================-->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Academic & Personal Projects</span>
+                    <h2 class="section-title">My Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="projects__intro">
+                    <p>
+                        Here are some of the projects I've completed during my studies and 
+                        through personal learning. These projects demonstrate my technical 
+                        abilities and problem-solving approach.
+                    </p>
+                </div>
+                
+                <div class="projects__grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-category">University Project</span>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3 class="project-title">E-Commerce Website</h3>
+                            <p class="project-description">
+                                A full-featured e-commerce platform developed as a university project 
+                                with user authentication, product catalog, and shopping cart functionality.
+                            </p>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML/CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                            
+                            <div class="project-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>User registration & authentication</li>
+                                    <li>Product browsing and search</li>
+                                    <li>Shopping cart management</li>
+                                    <li>Responsive design</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-category">Personal Project</span>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3 class="project-title">Task Management App</h3>
+                            <p class="project-description">
+                                A responsive web application for task management with drag-and-drop 
+                                functionality and real-time updates.
+                            </p>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">Local Storage</span>
+                            </div>
+                            
+                            <div class="project-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Drag-and-drop task organization</li>
+                                    <li>Task categorization</li>
+                                    <li>Responsive design</li>
+                                    <li>Data persistence</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-category">University Project</span>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3 class="project-title">Portfolio Website</h3>
+                            <p class="project-description">
+                                A responsive portfolio website showcasing projects and skills, 
+                                with modern design and smooth animations.
+                            </p>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">GSAP</span>
+                            </div>
+                            
+                            <div class="project-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Fully responsive design</li>
+                                    <li>Smooth animations</li>
+                                    <li>Contact form</li>
+                                    <li>Dark/light theme</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-category">Academic Project</span>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3 class="project-title">Weather Dashboard</h3>
+                            <p class="project-description">
+                                A weather application that fetches data from an API and displays 
+                                current weather conditions and forecasts for multiple cities.
+                            </p>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">API Integration</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                            
+                            <div class="project-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Real-time weather data</li>
+                                    <li>City search functionality</li>
+                                    <li>5-day forecast</li>
+                                    <li>Responsive UI</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get in touch</span>
+                    <h2 class="section-title">Let's Connect!</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <h3 class="contact__title">Ready for Internship Opportunities</h3>
+                        <p class="contact__description">
+                            I am actively seeking internship opportunities where I can contribute, 
+                            learn, and grow as a developer. Feel free to reach out if you have 
+                            any opportunities or would like to discuss potential collaborations.
+                        </p>
+                        
+                        <div class="contact__details">
+                            <div class="contact__item">
+                                <div class="contact-icon">
+                                    <i class="ri-mail-line"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <p>vimukthivpk123@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact__item">
+                                <div class="contact-icon">
+                                    <i class="ri-phone-line"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Phone</h4>
+                                    <p>+94 77 123 4567</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact__item">
+                                <div class="contact-icon">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Location</h4>
+                                    <p>Sri Lanka (Open to Remote)</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__social">
+                            <p class="social-title">Connect with me:</p>
+                            <div class="social-links">
+                                <a href="https://github.com/VimukthiPrabath" class="social-link" target="_blank">
+                                    <i class="ri-github-fill"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/vimukthi-prabath-koswaththa-4050b7247/" class="social-link" target="_blank">
+                                    <i class="ri-linkedin-box-fill"></i>
+                                </a>
+                                <a href="#" class="social-link" target="_blank">
+                                    <i class="ri-twitter-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__form">
+                        <h3 class="form-title">Send me a message</h3>
+                        
+                        <form id="internshipForm">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="text" name="company" placeholder="Company Name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <select name="subject" required>
+                                    <option value="" disabled selected>Select Subject</option>
+                                    <option value="internship">Internship Opportunity</option>
+                                    <option value="project">Project Collaboration</option>
+                                    <option value="info">General Information</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i class="ri-send-plane-line"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <a href="#home" class="footer-logo">Vimukthi Koswaththa</a>
+                    <p>Recent Computer Science Graduate seeking internship opportunities</p>
+                    
+                    <div class="footer-contact">
+                        <p><i class="ri-mail-line"></i> vimukthivpk123@gmail.com</p>
+                        <p><i class="ri-phone-line"></i> +94 77 123 4567</p>
+                    </div>
+                </div>
+                
+                <div class="footer__links">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#education">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="footer__social">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/VimukthiPrabath" target="_blank">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/vimukthi-prabath-koswaththa-4050b7247/" target="_blank">
+                            <i class="ri-linkedin-box-fill"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
             
-        </footer>
+            <div class="footer__bottom">
+                <p>&copy; <span id="currentYear"></span> Vimukthi Koswaththa. All rights reserved.</p>
+                <p>Created with passion for learning and growth</p>
+            </div>
+        </div>
+    </footer>
 
+    <!--=============== SCROLL UP ===============-->
+    <a href="#home" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
 
-        <!--========== SCROLL UP ==========-->
-        
-
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src=""></script>
-
-        <!--=============== SWIPER JS ===============-->
-        <script src=""></script>
-        
-        <!--=============== EMAIL JS ===============-->
-        
-
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
